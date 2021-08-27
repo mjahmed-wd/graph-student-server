@@ -1,0 +1,104 @@
+# query{
+#   getAll{
+#     id
+#     title
+#     description
+#   }
+# }
+
+# mutation{
+#   createPost(post:{title:"This is my new post no 29",
+#     description: "This is my first description no 29 nn "})
+#   {
+#     id
+#     title
+#     description
+#   }
+#   }
+
+
+# mutation{
+#   updatePost(id:"612852ff372d220b347ddad0",post:{
+#     title: "New Update",
+#     description: "New Description"
+#   }){
+#     id
+#     title
+#     description
+#   }
+# }
+
+# mutation{
+#   deletePost(id:"612852ff372d220b347ddace")
+# }
+
+# alll for students
+# query{
+# getAllStudent{
+#   id
+#   name
+#   email
+#   phone
+#   dateOfBirth
+#   takenSubjects
+# }
+# }
+
+# mutation{
+#   createStudent(student:{ name: "Sakib al hasan"
+#     email: "none@gamil.com",phone:"4444", dateOfBirth:"12/12/13",takenSubjects:"Bangla, English"}){
+#    name
+#     email
+#     dateOfBirth
+#     takenSubjects
+#   }
+# }
+
+# mutation{
+#   updateStudent(id:"612888df922d471a34105e9b",student:{
+#         name:"Tamim Iqbal Mia",
+#         email: "none@gamil.com",
+#         phone: "4444",
+#         dateOfBirth: "12/12/13",
+#         takenSubjects: "Bangla, English"
+#       })
+#   {
+#     name
+#   }
+# }
+
+# mutation{
+#   deleteStudent(id:"612884d4338a6f30fcf9eda6")
+# }
+
+# query{
+#   getAllSubjects{
+#     id
+#     value
+#     label
+#   }
+# }
+
+# mutation{
+#   createSubject(subject: {
+#     value: "2",
+#     label: "English"
+#   }){
+#     label
+#   }
+# }
+
+# mutation{
+#   updateSubject(id:"6128a3748269401458ede363", 
+#     subject:{
+#       value: "2",
+#       label: "Bangla"
+#     }){
+#     id
+#   }
+# }
+
+
+# mutation{
+#   deleteSubject(id:"6128a3508269401458ede35f")
+# }
