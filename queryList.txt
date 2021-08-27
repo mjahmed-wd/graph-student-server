@@ -40,30 +40,38 @@
 #   email
 #   phone
 #   dateOfBirth
-#   takenSubjects
+#   takenSubjects{
+#     value
+#     label
+#   }
 # }
 # }
 
 # mutation{
-#   createStudent(student:{ name: "Sakib al hasan"
-#     email: "none@gamil.com",phone:"4444", dateOfBirth:"12/12/13",takenSubjects:"Bangla, English"}){
+#   createStudent(student:{ name: "Hossan Raju"
+#     email: "none@gamil.com",phone:"4444", dateOfBirth:"12/12/13",
+#     takenSubjects:[{value:"2", label:"Bangla"},{value:"1", label:"English"}]}){
 #    name
-#     email
-#     dateOfBirth
-#     takenSubjects
+#     takenSubjects{
+#       label
+#     }
 #   }
 # }
 
 # mutation{
-#   updateStudent(id:"612888df922d471a34105e9b",student:{
-#         name:"Tamim Iqbal Mia",
+#   updateStudent(id:"6128d2951e65dd2aac9f1860",student:{
+#         name:"Jubair",
 #         email: "none@gamil.com",
 #         phone: "4444",
 #         dateOfBirth: "12/12/13",
-#         takenSubjects: "Bangla, English"
+#         takenSubjects: [{value:"3", label:"Hindi"},{value:"1", label:"English"}]
 #       })
 #   {
 #     name
+#     takenSubjects{
+#       value
+#       label
+#     }
 #   }
 # }
 
@@ -96,7 +104,7 @@
 #     }){
 #     id
 #   }
-# }
+# } 
 
 
 # mutation{

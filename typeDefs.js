@@ -13,7 +13,7 @@ const typeDefs = gql`
     email: String
     phone: String
     dateOfBirth: String
-    takenSubjects: String
+    takenSubjects: [Subject]
   }
 
   input PostInput {
@@ -25,8 +25,10 @@ const typeDefs = gql`
     email: String
     phone: String
     dateOfBirth: String
-    takenSubjects: String
+    takenSubjects: [SubjectInput]
   }
+
+  
   type Subject {
     id: ID
     value: String
